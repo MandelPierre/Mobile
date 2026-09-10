@@ -3,7 +3,7 @@ import { TextInput, View } from 'react-native';
 import { Pressable, Text } from 'react-native';
 
 
-export default function Exercicio1() {
+export default function Exercicio3() {
   const [nome, setNome] = useState('');
   const [nota1, setNota1] = useState(0);
   const [nota2, setNota2] = useState(0);
@@ -33,28 +33,28 @@ export default function Exercicio1() {
         placeholder="Digite seu nome"
         value={nome}
         onChangeText={setNome}
-        style={{ borderWidth: 1, padding: 10, width: '20%', margin: 10 }}
+        style={{ borderWidth: 1, padding: 10, width: '20%', margin: 10, textAlign: 'center' }}
       />
       <TextInput
         placeholder="Digite sua primeira nota"
         value={nota1}
         onChangeText={setNota1}
         keyboardType="decimal-pad"
-        style={{ borderWidth: 1, padding: 10, width: '20%', margin: 10 }}
+        style={{ borderWidth: 1, padding: 10, width: '20%', margin: 10, textAlign: 'center' }}
       />
       <TextInput
       placeholder='Digite sua segunda nota'
       value={nota2}
       onChangeText={setNota2}
       keyboardType="decimal-pad"
-      style={{ borderWidth: 1, padding: 10, width: '20%', margin: 10 }}
+      style={{ borderWidth: 1, padding: 10, width: '20%', margin: 10, textAlign: 'center' }}
       />
       <TextInput
       placeholder='Digite sua terceira nota'
       value={nota3}
       onChangeText={setNota3}
       keyboardType="decimal-pad"
-      style={{ borderWidth: 1, padding: 10, width: '20%', margin: 10 }}
+      style={{ borderWidth: 1, padding: 10, width: '20%', margin: 10, textAlign: 'center' }}
       />
 
       <Pressable onPress={calcularMedia} style={{ backgroundColor: '#2196F3', padding: 12, borderRadius: 8 }}>

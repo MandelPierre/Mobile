@@ -3,7 +3,7 @@ import { TextInput, View } from 'react-native';
 import { Pressable, Text } from 'react-native';
 
 
-export default function Exercicio1() {
+export default function Exercicio2() {
   const [peso, setPeso] = useState('');
   const [altura, setAltura] = useState('');
   const [resultado, setResultado] = useState('');
@@ -33,13 +33,13 @@ export default function Exercicio1() {
         placeholder="Digite seu peso"
         value={peso}
         onChangeText={setPeso}
-        style={{ borderWidth: 1, padding: 10, width: '20%', margin: 10 }}
+        style={{ borderWidth: 1, padding: 10, width: '20%', margin: 10, textAlign: 'center' }}
       />
       <TextInput
       placeholder='Digite seu altura'
       value={altura}
       onChangeText={setAltura}
-      style={{ borderWidth: 1, padding: 10, width: '20%', margin: 10 }}
+      style={{ borderWidth: 1, padding: 10, width: '20%', margin: 10, textAlign: 'center' }}
       />
 
       <Pressable onPress={calcularIMC} style={{ backgroundColor: '#2196F3', padding: 12, borderRadius: 8, margin: 10 }}>

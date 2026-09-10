@@ -4,7 +4,7 @@ import { Pressable, Text } from 'react-native';
 import { Picker } from '@react-native-picker/picker';
 
 
-export default function Exercicio1() {
+export default function Exercicio4() {
   const [tipoConversao, setTipoConversao] = useState('celsius');
   const [temperatura, setTemperatura] = useState('');
   const [resultado, setResultado] = useState('');

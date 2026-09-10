@@ -26,20 +26,20 @@ export default function Exercicio1() {
         placeholder="Digite seu nome"
         value={nome}
         onChangeText={setNome}
-        style={{ borderWidth: 1, padding: 10, width: '20%', margin: 10 }}
+        style={{ borderWidth: 1, padding: 10, width: '20%', margin: 10, textAlign: 'center' }}
       />
       <TextInput
       placeholder='Digite seu sobrenome'
       value={sobrenome}
       onChangeText={setSobrenome}
-      style={{ borderWidth: 1, padding: 10, width: '20%', margin: 10 }}
+      style={{ borderWidth: 1, padding: 10, width: '20%', margin: 10, textAlign: 'center' }}
       />
       <TextInput
       placeholder='Digite sua idade'
       value={idade}
       onChangeText={setIdade}
       keyboardType='numeric'
-      style={{ borderWidth: 1, padding: 10, width: '20%', margin: 10 }}
+      style={{ borderWidth: 1, padding: 10, width: '20%', margin: 10, textAlign: 'center' }}
       />
       <Pressable onPress={verificarIdade} style={{ backgroundColor: '#2196F3', padding: 12, borderRadius: 8 }}>
         <Text style={{ color: 'white' }}>Verificar</Text>
